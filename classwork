@@ -1,1 +1,56 @@
-**************25/02/25****************
+**************************************************************27/02/25**************************************************************
+
+***********************************************************01/03/25*****************************************************************
+***************************************************MULTI INHERITANCE**********************************************************************
+import java.util.*;
+class student{
+    int Mark=98;
+    String Name="karthi";
+}
+class college extends student{
+    String dpt= "EEE";
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    college s1 =new college();
+	    System.out.println("Student Name : " +s1.Name);
+		System.out.println("Student Mark : " +s1.Mark);
+		System.out.println("Student Department : "+s1.dpt);
+	}
+}
+OUTPUT:
+Student Name : karthi
+Student Mark : 98
+Student Department : EEE
+/////////////////////////user give input///////////////////////////
+import java.util.*;
+class student{
+   	       int Mark;
+        String Name;
+}
+class college extends student{
+    String dpt;
+}
+class placement extends college{
+    double cgpa;
+}
+public class Main
+{
+	 public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+	    placement s =new placement();
+	     s.Mark=sc.nextInt();
+	     sc.nextLine();
+	     s.Name=sc.next();
+	     s.dpt=sc.next();
+	     s.cgpa =sc.nextDouble();
+	    System.out.println("Student Name : " + s.Name + " , "+"Student Mark : " + s.Mark +" , "+ "Student cgpa : " + s.cgpa +" , "+ "Student Department : " + s.dpt);
+	}
+}
+OUTPUT:
+80  
+karthi
+EEE
+9.0
+Student Name : karthi , Student Mark : 80 , Student cgpa : 9.0 , Student Department : EEE
