@@ -1,4 +1,56 @@
 **************************************************************27/02/25**************************************************************
+********************oops using ArrayLIst*******************
+import java.util.*;
+class Main {
+    public static void main(String[]args){
+        List<Player> A =new ArrayList<>();
+        Player p1=new Player();
+        p1.name="Karthikeyan";
+        p1.country="india";
+        p1.skill="football";
+        A.add(p1);
+        Player p2=new Player();
+        p2.name="Arun";
+        p2.country="india";
+        p2.skill="cricket";
+        A.add(p2);
+        for(Player p : A){
+            System.out.println(p.name+"-->"+p.country+"-->"+p.skill);
+        }
+    }
+}
+class Player{
+   public String name;
+   public String country;
+   public String skill;
+}
+OUTPUT:
+Karthikeyan-->india-->football
+Arun-->india-->cricket
+
+=== Code Execution Successful ===
+***************************************************************************************************************************************************************
+**********************************constructor****************************
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        ADD OB=new ADD(10);
+        
+    }
+}
+class ADD{
+    ADD(){
+        System.out.println(30);
+    }
+    ADD(int a){
+        System.out.println(a+30);
+    }
+}
+OUTPUT:
+40
+
+=== Code Execution Successful ===
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ***********************************************************01/03/25*****************************************************************
 ***************************************************MULTI INHERITANCE**********************************************************************
@@ -54,3 +106,30 @@ karthi
 EEE
 9.0
 Student Name : karthi , Student Mark : 80 , Student cgpa : 9.0 , Student Department : EEE
+****************************************************************************************************************************************************************************
+*****************************************************************polymorphism**************************************************************************************
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        three sc=new three();
+        sc.display();
+    }
+}
+class one{
+    public void display2(){
+        System.out.println("class one");
+    }
+}
+class two extends one{
+    public void display1(){
+        System.out.println("class two");
+    }
+}
+class three extends two {
+    public void display(){
+        System.out.println("class three");
+    }
+}
+OUTPUT:
+class three
+
