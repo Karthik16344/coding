@@ -164,6 +164,30 @@ class two extends one{
         System.out.println(x*y*z);
     }
 }
+***************************************************************************************************************************************************************************************
+interface vehicle{
+    void start();
+}
+class bike implements vehicle{
+    public void start(){
+        System.out.println("BIKE STARTED");
+    }
+}class car implements vehicle{
+    public void start(){
+        System.out.println("CAR STARTED");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        vehicle sc=new bike();
+        vehicle ob=new car();
+        sc.start();
+        ob.start();
+    }
+}
+OUTPUT:
+BIKE STARTED
+CAR STARTED
 
  
 
